@@ -16,6 +16,10 @@
 		154206532C0EBC15005771BC /* FetchApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154206522C0EBC15005771BC /* FetchApiTests.swift */; };
 		1542065D2C0EBC15005771BC /* FetchApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542065C2C0EBC15005771BC /* FetchApiUITests.swift */; };
 		1542065F2C0EBC15005771BC /* FetchApiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542065E2C0EBC15005771BC /* FetchApiUITestsLaunchTests.swift */; };
+		154206702C0EC359005771BC /* MealManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1542066F2C0EC359005771BC /* MealManager.swift */; };
+		154206722C0EC722005771BC /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154206712C0EC722005771BC /* MealModel.swift */; };
+		154206742C0EE11C005771BC /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154206732C0EE11C005771BC /* MealDetailViewController.swift */; };
+		154206762C115820005771BC /* DetailedMealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154206752C115820005771BC /* DetailedMealModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		154206582C0EBC15005771BC /* FetchApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1542065C2C0EBC15005771BC /* FetchApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchApiUITests.swift; sourceTree = "<group>"; };
 		1542065E2C0EBC15005771BC /* FetchApiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchApiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1542066F2C0EC359005771BC /* MealManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealManager.swift; sourceTree = "<group>"; };
+		154206712C0EC722005771BC /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
+		154206732C0EE11C005771BC /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
+		154206752C115820005771BC /* DetailedMealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedMealModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,11 @@
 		1542063A2C0EBC13005771BC /* FetchApi */ = {
 			isa = PBXGroup;
 			children = (
+				1542066E2C0EBD24005771BC /* Controller */,
+				1542066D2C0EBD17005771BC /* View */,
+				1542066B2C0EBCF1005771BC /* Model */,
 				1542063B2C0EBC13005771BC /* AppDelegate.swift */,
 				1542063D2C0EBC13005771BC /* SceneDelegate.swift */,
-				1542063F2C0EBC13005771BC /* ViewController.swift */,
-				154206412C0EBC13005771BC /* Main.storyboard */,
 				154206442C0EBC15005771BC /* Assets.xcassets */,
 				154206462C0EBC15005771BC /* LaunchScreen.storyboard */,
 				154206492C0EBC15005771BC /* Info.plist */,
@@ -125,6 +134,33 @@
 				1542065E2C0EBC15005771BC /* FetchApiUITestsLaunchTests.swift */,
 			);
 			path = FetchApiUITests;
+			sourceTree = "<group>";
+		};
+		1542066B2C0EBCF1005771BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1542066F2C0EC359005771BC /* MealManager.swift */,
+				154206712C0EC722005771BC /* MealModel.swift */,
+				154206752C115820005771BC /* DetailedMealModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1542066D2C0EBD17005771BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				154206412C0EBC13005771BC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1542066E2C0EBD24005771BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1542063F2C0EBC13005771BC /* ViewController.swift */,
+				154206732C0EE11C005771BC /* MealDetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				154206722C0EC722005771BC /* MealModel.swift in Sources */,
+				154206762C115820005771BC /* DetailedMealModel.swift in Sources */,
 				154206402C0EBC13005771BC /* ViewController.swift in Sources */,
+				154206742C0EE11C005771BC /* MealDetailViewController.swift in Sources */,
 				1542063C2C0EBC13005771BC /* AppDelegate.swift in Sources */,
+				154206702C0EC359005771BC /* MealManager.swift in Sources */,
 				1542063E2C0EBC13005771BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
